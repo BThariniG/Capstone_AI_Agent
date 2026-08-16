@@ -25,9 +25,14 @@ These four limitations will give us useful comparison points for Phase 3.
 # Python Baseline Agent — Output Snapshot - interaction log
 <img width="1867" height="987" alt="image" src="https://github.com/user-attachments/assets/3814d4be-3e14-47e1-be64-a34a010d65a0" />
 
+# Python Baseline Agent - Test Cases Inference Matrix
+<img width="975" height="611" alt="image" src="https://github.com/user-attachments/assets/192ec281-d725-4b28-bc1a-ff85a988aad8" />
+
 # Why Phase 2 is Insufficient for Real Users
 
 This should be a key conclusion of Phase 2.
+
+<img width="478" height="366" alt="image" src="https://github.com/user-attachments/assets/a9b06e7b-f17d-4ea8-959e-983dc4c3a982" />
 
 The baseline agent demonstrates the basic mechanics of accepting input and generating output, but it is not suitable for real customer-support use because it:
 
