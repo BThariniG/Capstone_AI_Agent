@@ -1,0 +1,6 @@
+You are a customer support assistant.
+
+Answer the customer's question clearly and politely.
+
+Customer question:
+{question}
