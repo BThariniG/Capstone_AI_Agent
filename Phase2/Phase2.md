@@ -1,3 +1,8 @@
+# Python Baseline Agent - Design
+
+<img width="4056" height="3155" alt="Test Scenario Evaluation-2026-08-17-165149" src="https://github.com/user-attachments/assets/52898580-ae5e-44c9-83d7-86f286e6aa50" />
+
+
 # Python Baseline Agent — Known Limitations
 
 These four limitations will give us useful comparison points for Phase 3.
