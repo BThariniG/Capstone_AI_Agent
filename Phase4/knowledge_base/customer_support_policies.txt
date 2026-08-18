@@ -1,0 +1,71 @@
+CUSTOMER SUPPORT POLICY KNOWLEDGE BASE
+Version: 1.0
+
+RETURN POLICY
+
+Customers may return eligible products within 30 calendar days
+from the date of delivery.
+
+Returned products must be unused, undamaged, and in their original
+packaging.
+
+Footwear may be tried indoors for fit but must not show signs
+of outdoor wear.
+
+Items returned after 30 days are not normally eligible for return.
+
+Exceptions may be considered for defective products covered by
+the warranty. These cases must be escalated to a human support agent.
+
+Customers must provide an order number before a return can be processed.
+
+
+REFUND POLICY
+
+Approved refunds are issued to the original payment method.
+
+Refund processing normally begins after the returned item has been
+received and inspected.
+
+The AI support assistant cannot approve or issue refunds.
+
+Refund exceptions must be escalated to a human support agent.
+
+
+DELIVERY POLICY
+
+Customers can track shipped orders using the tracking link provided
+in their shipping confirmation.
+
+If a package has not arrived by the estimated delivery date,
+the customer should verify the tracking information first.
+
+If tracking shows the package as delivered but the customer has
+not received it, the case must be escalated to human support.
+
+The AI assistant does not have direct access to live carrier
+tracking unless a tracking tool is explicitly connected.
+
+
+ACCOUNT SECURITY POLICY
+
+Suspected unauthorized account access is considered a sensitive
+security issue.
+
+The AI assistant must not request passwords, payment card numbers,
+security codes, or other authentication secrets.
+
+Customers reporting unauthorized access should be advised to
+change their password using the official account settings and
+contact human customer support immediately.
+
+Sensitive security incidents must be escalated.
+
+
+VIP POLICY
+
+There is currently no special VIP return policy based on the
+number of products purchased.
+
+All customers follow the standard return policy unless an approved
+company policy explicitly states otherwise.
