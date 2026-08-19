@@ -27,7 +27,7 @@ implementation and is not included as an Agent tool in the final Phase 5 design.
 ---
 
 ## 2. Phase 5 Architecture
-
+<img width="635" height="898" alt="image" src="https://github.com/user-attachments/assets/53336d82-341b-464e-b9c7-fbf7c3875372" />
 
 ## 3. Phase 5 Tools
 
