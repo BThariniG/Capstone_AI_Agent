@@ -25,6 +25,7 @@ The Agent was first tested without conversation memory to establish the
 baseline behaviour.
 
 ### Observation
+<img width="620" height="566" alt="image" src="https://github.com/user-attachments/assets/0c3214a6-b0b1-401d-adf0-e50746d1b40f" />
 
 Without memory, the Agent cannot reliably use information supplied in an
 earlier conversational turn when processing a later follow-up request.
@@ -55,6 +56,7 @@ The Agent was tested across multiple turns in the same Playground
 session.
 
 ### Observation
+<img width="592" height="782" alt="image" src="https://github.com/user-attachments/assets/91010f4b-84ed-4528-83a2-7f04e20611d1" />
 
 With memory enabled, the Agent can use relevant information from
 previous messages when interpreting a follow-up request. This improves
@@ -94,6 +96,7 @@ A new Playground session was created to verify that context from the
 previous session was not incorrectly reused.
 
 ### Observation
+<img width="586" height="337" alt="image" src="https://github.com/user-attachments/assets/e3590f99-5a7c-4553-a19d-b41fd9f8bcc6" />
 
 The new session did not rely on the previous session's conversational
 context. When required information was unavailable in the new session,
@@ -139,6 +142,7 @@ Generate Customer Response
 ```
 
 ### Observation
+<img width="572" height="381" alt="image" src="https://github.com/user-attachments/assets/64ca246d-2c0a-4af5-b96e-2d73989fca27" />
 
 The test demonstrates the Phase 6 planning design in which the Agent
 considers the conversation context before deciding on the next action.
@@ -214,6 +218,7 @@ Call Appropriate Tool if Required
 ```
 
 ### Observation
+<img width="717" height="498" alt="image" src="https://github.com/user-attachments/assets/e1528596-ab9c-47eb-8808-daddfab2710c" />
 
 Instead of inventing missing information, the Agent can request the
 required clarification and continue the original task using the
@@ -248,6 +253,7 @@ Agent retains recent conversation context
         ↓
 Follow-up request uses that context
 ```
+<img width="772" height="661" alt="image" src="https://github.com/user-attachments/assets/e0a96d4a-df0f-41f7-ad9d-2f3b205822a1" />
 
 **Result:** Context is available within the same session.
 
@@ -264,6 +270,7 @@ Previous Session A context unavailable
        ↓
 Agent must obtain required information again
 ```
+<img width="753" height="443" alt="image" src="https://github.com/user-attachments/assets/fd5582fa-06e1-41a6-b256-bf90badfdafd" />
 
 **Result:** Previous session context was not incorrectly reused.
 
