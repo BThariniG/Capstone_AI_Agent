@@ -1,0 +1,71 @@
+services:
+  langflow:
+    image: langflowai/langflow:1.11.3
+
+    container_name: customer-support-langflow
+
+    ports:
+      - "7860:7860"
+
+    env_file:
+      - .env
+
+    environment:
+      # Required for loading flows from LANGFLOW_LOAD_FLOWS_PATH
+      LANGFLOW_AUTO_LOGIN: "true"
+
+      # Don't create starter/demo flows
+      LANGFLOW_CREATE_STARTER_PROJECTS: "false"
+
+      # Load all exported flow JSON files from the mounted flows directory
+      LANGFLOW_LOAD_FLOWS_PATH: "/app/flows"
+
+      # Accept internal API calls using LANGFLOW_API_KEY from .env
+      LANGFLOW_API_KEY_SOURCE: "env"
+
+      # Logging / tracing
+      LANGFLOW_NATIVE_TRACING: "true"
+      LANGFLOW_LOG_LEVEL: "INFO"
+      LANGFLOW_LOG_FILE: "/app/logs/langflow.log"
+      LANGFLOW_LOG_ENV: "container"
+      LANGFLOW_SERVICE_NAME: "customer-support-capstone"
+
+      # Optional log access through Langflow API
+      LANGFLOW_ENABLE_LOG_RETRIEVAL: "true"
+      LANGFLOW_LOG_RETRIEVER_BUFFER_SIZE: "10000"      
+
+    volumes:
+      # Persist Langflow application data
+      - langflow-data:/app/langflow
+
+      # Mount exported flows
+      - ./flows:/app/flows:ro
+
+      # Persist logs on your Windows host
+      - ./logs:/app/logs
+
+      - ./data:/app/data
+
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://localhost:7860/health_check', timeout=5)"
+        ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+    restart: unless-stopped
+    
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  langflow-data:
